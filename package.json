@@ -1,0 +1,19 @@
+{
+  "name": "dipilink-electron",
+  "version": "0.0.1",
+  "description": "Just an electron wrapper of DiPiLink",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "tsc && electron .",
+    "setup": "git clone https://github.com/iucapad/dipilink ./public && cd public && npm i",
+    "build": "cd public && npm run build"
+  },
+  "author": "Teaflex",
+  "license": "ISC",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.57",
+    "electron": "^13.0.1",
+    "typescript": "^4.3.2"
+  },
+  "dependencies": {}
+}
