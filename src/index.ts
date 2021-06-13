@@ -23,6 +23,8 @@ function createWindow() {
     });
 }
 
+app.commandLine.appendSwitch('ignore-certificate-errors', 'true');
+
 app.whenReady().then(() => {
     createWindow();
 
